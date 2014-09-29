@@ -15,14 +15,14 @@
 ;end
 
 
-;pro error4
+;pro error3
 ;   x = [1,2,3]
 ;   y = ['a','b', 'c']
 ;   z = [x, y]
 ;ed
 
 
-;pro error5
+;pro error4
 ;a = fltarr(1000,1000)
 ;s = size(a)
 ;for i = 0, s[1] - 1 do begin
