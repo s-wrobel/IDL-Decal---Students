@@ -60,7 +60,7 @@ pro error5, a
 ; loop handles zeros rather than replacing all the numbers generated above
   FOR i=0, s[1] - 1 DO BEGIN
      FOR j=0, s[2] - 1 DO BEGIN
-        IF a[i, j] NE 0 THEN BEGIN
+        IF a[i, j] EQ 0 THEN BEGIN
            a[i,j] = 5                           ; replace 0 with 5 in array
         ENDIF
      ENDFOR
