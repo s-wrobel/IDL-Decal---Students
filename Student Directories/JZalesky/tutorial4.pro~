@@ -7,11 +7,6 @@ pro fake_out
      ;the above function just reads in
      ;strings from the text file clues.txt
      ;we'll learn more about this next week
-     
-     ;please avoid simply printing clues to
-     ;get an idea of what the strings 
-     ;look like. The idea is to work with the
-     ;functions within idl.
 
      ;FOLLOW THE FOLLOWING INSTRUCTIONS AND CONCATENATE THE RESULTS OF EACH INTO AN ARRAY
      
@@ -27,4 +22,6 @@ pro fake_out
      ;8. add in a '.pro'
      ;9. print your string and go find the file  in /home/jzalesky/public_html
      ;   and open it in emacs
+     
+     ;edit to see if works for ugastro server
 end     
