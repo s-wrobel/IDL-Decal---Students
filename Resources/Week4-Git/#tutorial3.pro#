@@ -1,17 +1,17 @@
 pro error1
    x = findgen(10)
-   for i = 0, n_elements(x) do begin
+   for i = 0, n_elements(x) DO BEGIN
        print, x[i]
    endfor
 end
 
 
-pr error2
-   print hello
+pro error2
+   print, hello
 end
 
 pro error3
-   print, '3 divided by 2 is ' + 3/2
+   print, '3 divided by 2 is ' + '3/2'
 end
 
 
@@ -19,7 +19,7 @@ pro error3
    x = [1,2,3]
    y = ['a','b', 'c']
    z = [x, y]
-ed
+end
 
 
 pro error4
