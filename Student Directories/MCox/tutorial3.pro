@@ -6,7 +6,7 @@ pro error1, x, i
 end
 
 ; This program is meant to count all numbers starting at 0 to one number
-; before the imputed number.
+; before the imputed number
 
 pro error2, x
   x = 'hello'
