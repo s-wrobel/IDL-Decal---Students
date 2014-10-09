@@ -6,7 +6,7 @@ pro fake_out
      
      solution = strarr(5)
                                 ;initializing the array with set
-                                ;length because how do you not set a length?
+                                ;length because how do you not set a length/?
 
 ;1. extract the first letter of the first string in clues and make it
 ;   lowercase (use strlowcase)
@@ -68,14 +68,14 @@ pro fake_out
         ;does this hint mean there are
         ;only two o's in our string? 
      o2 = STRPOS(actualtutorialname, '*o*', /reverse_search)
-     STRPUT(actualtutorialname, '', STRPOS)
+     STRPUT, actualtutorialname, '', o2
         
         
 ;8. add in a '.pro'
     actualtutorialname = actualtutorialname + '.pro'
         ;adding .pro
 
-;9. print your string and go find the file  in /home/jzalesky/public_html
+;9. print your string and go find the file  in \/home/jzalesky/public_html
 ;   and open it in emacs
     print, actualtutorialname
 end     
