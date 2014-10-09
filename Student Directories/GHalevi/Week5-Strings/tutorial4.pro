@@ -68,9 +68,8 @@ pro fake_out
         ;does this hint mean there are
         ;only two o's in our string? 
      o2 = STRPOS(actualtutorialname, '*o*', /reverse_search)
-     REPSTR(actualtutorialname, o2, '')
-        ;not sure if this will work because the second input should
-        ;be a string to search for, not a position
+     STRPUT(actualtutorialname, '', STRPOS)
+        
         
 ;8. add in a '.pro'
     actualtutorialname = actualtutorialname + '.pro'
