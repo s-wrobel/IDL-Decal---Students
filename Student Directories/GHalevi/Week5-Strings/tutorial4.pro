@@ -4,8 +4,9 @@ pro fake_out
         ;the above function just reads in
         ;strings from the text file clues.txt
      
-     solution = strarr()
-        ;initializing the array with no set length
+     solution = strarr(5)
+                                ;initializing the array with set
+                                ;length because how do you not set a length?
 
 ;1. extract the first letter of the first string in clues and make it
 ;   lowercase (use strlowcase)
@@ -70,7 +71,7 @@ pro fake_out
      REPSTR(actualtutorialname, o2, '')
         ;not sure if this will work because the second input should
         ;be a string to search for, not a position
-
+        
 ;8. add in a '.pro'
     actualtutorialname = actualtutorialname + '.pro'
         ;adding .pro
